@@ -47,7 +47,6 @@ namespace LoggingRabbit
                 Console.WriteLine("\tany other option will end the program or type exit");
                 Console.Write("Your option? ");
 
-                // Use a switch statement to do the math.
                 switch (Console.ReadLine())
                 {
                     case "d":
@@ -76,6 +75,9 @@ namespace LoggingRabbit
 
         }
 
+        /// <summary>
+        /// Configure configurations and DI
+        /// </summary>
         static void SetUp()
         {
             LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
